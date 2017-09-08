@@ -5,9 +5,9 @@
  Purpose of this documentation is to refresh my memory as i move along with other technologies and/or project.       
 
 ## Contents
-| #  | Items | Description |
-| ------------- | ------------- |
-| 1  | serverScript  | serverFileLookUp.sh is to parse the server name based on list of server entry in the file |
+| #  | Items        | Description                                                                                                |
+|----|--------------|------------------------------------------------------------------------------------------------------------|
+| 1  | serverScript | serverFileLookUp.sh is to parse the server name based on list of server entry in the file                  |
 | 2  | queryServer  | queryServers.sh is to read the list of entries from the file and query ( assumed give file list is right ) |
 
 ## Release Update
