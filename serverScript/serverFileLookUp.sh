@@ -4,7 +4,7 @@ HOST=`hostname`
 # find_file function will read the contents of file from server_list.txt
 find_file()
 {
-	LIST_DIR=$MCELL_HOME/etc/server_list.txt
+	LIST_DIR=$SERVER_HOME/etc/server_list.txt
 }
 
 #Main Function
