@@ -1,19 +1,23 @@
 HOST=`hostname`
 
-
 #Function 1:
+# find_file function will read the contents of file from server_list.txt
 find_file()
 {
 	LIST_DIR=$MCELL_HOME/etc/server_list.txt
 }
 
-
-
 #Main Function
-#-----------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------
+#1: find_file => function has been called and variable LIST_DIR holds the value now
+#2: sed '/^\s*$/d' =>  removes all the empty lines and tabs. and new file is created called cleanList
+#3: while loop reads one value at a time from cleanList ( pay attention to end of line for done </tmp/cleanList )
+#4: if conditions to check if F_HOST and P_HOST has value respectively before do something.
+#---------------------------------------------------------------------------------------------------------------
 find_file
 sed '/^\s*$/d' $LIST_DIR |grep -v "#" > /tmp/cleanList
 
+# reads from cleanList file 
 while read cell;
 do
     #parse for 3 values
@@ -44,6 +48,5 @@ do
 
     	}
 	fi
-   
-
 done </tmp/cleanList
+#end of whileloop
